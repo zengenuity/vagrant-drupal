@@ -15,7 +15,7 @@ config:
     type: private_network
     ip: 172.28.128.150
   solr:
-    install: false
+    install: true
 ```
 
 Note: If you choose to override a section of the config, you must include all the
