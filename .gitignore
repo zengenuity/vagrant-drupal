@@ -1,6 +1,6 @@
 .vagrant
 www/*
-!www/.readme.txt
+!www/.gitkeep
 data/*
-!data/.readme.txt
+!data/.gitkeep
 config/config.yml
