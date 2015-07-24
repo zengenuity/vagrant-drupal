@@ -1,0 +1,6 @@
+.vagrant
+www/*
+!www/.readme.txt
+data/*
+!data/.readme.txt
+config/config.yml

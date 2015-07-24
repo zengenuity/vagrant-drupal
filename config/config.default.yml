@@ -1,0 +1,29 @@
+config:
+  box: ubuntu/trusty64
+  display_config: false
+  virtualbox: 
+    memory: 2048
+    cpus: 4
+  network: 
+    type: private_network
+    # ip: 172.28.128.150
+  apache: 
+    install: true
+  mysql: 
+    install: true
+    password: pass
+  composer:
+    install: true
+  drush:
+    install: true
+  drupal_console:
+    install: true
+  node_tools:
+    install: true
+  solr:
+    install: false
+  zsh: 
+    install: true
+  mailhog:
+    install: true
+    binary_url: https://www.dropbox.com/s/313qgmro7m7iy2i/mailhog?dl=1
