@@ -28,7 +28,11 @@ Vagrant.configure(2) do |config|
   
   # Network
   if conf['network']['type'] == 'private_network'
-    config.vm.network "private_network", type: "dhcp"
+    if (conf['network'].has_key? 'ip')
+      config.vm.network :private_network, ip: conf['network']['ip']
+    else
+      config.vm.network "private_network", type: "dhcp"
+    end
     config.vm.synced_folder "data/", "/var/data", type: "nfs", mount_options: ['actimeo=1'], create: true
   else
     config.vm.synced_folder "data/", "/var/data", create: true
